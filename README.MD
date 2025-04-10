@@ -6,6 +6,7 @@ Go through setting up the SSL certificate also.
 <br/>
 
 <h2>Hosted Zone (echo.yourdomain.com)</h2>
+
 - A Hosted Zone is like a DNS server that manages the DNS records for your domain.
 - Create hosted zone.
 - Once the Hosted Zone is created, AWS will assign a set of four Name Server (NS) records to it.
@@ -18,7 +19,9 @@ Update Name Servers at Your Domain Registrar (godaddy)
 <p>
 Replace the existing Name Servers with the four Name Servers provided by Route 53 in the previous step.
 Note:
+
 - DNS propagation can take up to 24-48 hours, so changes might not be immediate.
+
 </p>
 
 ![NS](./asset/Configure.png)
@@ -31,6 +34,7 @@ Note:
 
 
 <h2>Create SSL certificate via ACM (tm.echo.yourdomain.com)</h2>
+
 - Request a certificate
 
 ![acmRequest](./asset/acmRequest.png)
@@ -45,3 +49,6 @@ Note:
 
 
 <h2>Validate certificate</h2>
+
+![ValidateCertificate](./asset/ValidateCertificate.png)
+
